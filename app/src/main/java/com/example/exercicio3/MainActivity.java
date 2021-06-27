@@ -34,4 +34,12 @@ public class MainActivity extends AppCompatActivity {
         textViewResultadoFinal.setText(soma.toString());
     }
 
+    public void calcularSubtracao(View view){
+        Double valor1 = Double.parseDouble(editTextValor1.getText().toString());
+        Double valor2 = Double.parseDouble(editTextValor2.getText().toString());
+
+        Double subtracao = valor1 - valor2;
+        textViewResultadoFinal.setText(subtracao.toString());
+    }
+
 }
