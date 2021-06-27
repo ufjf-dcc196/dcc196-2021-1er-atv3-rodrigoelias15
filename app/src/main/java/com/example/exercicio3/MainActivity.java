@@ -42,4 +42,12 @@ public class MainActivity extends AppCompatActivity {
         textViewResultadoFinal.setText(subtracao.toString());
     }
 
+    public void calcularMultiplicacao(View view){
+        Double valor1 = Double.parseDouble(editTextValor1.getText().toString());
+        Double valor2 = Double.parseDouble(editTextValor2.getText().toString());
+
+        Double multiplicacao = valor1 * valor2;
+        textViewResultadoFinal.setText(multiplicacao.toString());
+    }
+
 }
