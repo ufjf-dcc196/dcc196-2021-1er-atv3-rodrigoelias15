@@ -97,6 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:onClick="calcularDivisao"
         android:text="Dividir"
         app:backgroundTint="#1D2CAF"
         app:layout_constraintEnd_toEndOf="@+id/buttonMultiplicar"

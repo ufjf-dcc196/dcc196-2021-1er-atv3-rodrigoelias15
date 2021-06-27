@@ -50,4 +50,17 @@ public class MainActivity extends AppCompatActivity {
         textViewResultadoFinal.setText(multiplicacao.toString());
     }
 
+    public void calcularDivisao(View view){
+        Double valor1 = Double.parseDouble(editTextValor1.getText().toString());
+        Double valor2 = Double.parseDouble(editTextValor2.getText().toString());
+
+        if(valor2 != 0){
+            Double divisao = valor1 / valor2;
+            textViewResultadoFinal.setText(divisao.toString());
+        } else{
+            textViewResultadoFinal.setText("ERRO!! DIVISOR NAO PODE SER ZERO.");
+        }
+
+    }
+
 }
